@@ -18,6 +18,7 @@ import {
   useSphericalJoint 
 } from '@react-three/rapier'
 import { MeshLineGeometry, MeshLineMaterial } from 'meshline'
+import logoUrl from './assets/logoubd.png'
 
 // Daftarkan MeshLine ke React Three Fiber
 extend({ MeshLineGeometry, MeshLineMaterial })
@@ -69,8 +70,8 @@ function Band() {
   const j3 = useRef()
   const card = useRef()
 
-  // Muat logo resmi UBD dari public/logoubd.png
-  const logoTexture = useTexture('/logoubd.png')
+  // Muat logo resmi UBD dari asset ter-bundle
+  const logoTexture = useTexture(logoUrl)
 
   const vec = useRef(new THREE.Vector3()).current
   const ang = useRef(new THREE.Vector3()).current
