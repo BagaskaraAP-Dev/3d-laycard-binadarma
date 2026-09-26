@@ -1,0 +1,25 @@
+# Node / Web dependencies & build
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# Environment variables
+.env
+.env.*
+
+# Editor & OS files
+.vscode/
+.idea/
+.kilo/
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+
+# Backup files
+*.bak
+*.tmp
+belajar.java
+belajar.py
+autobiografi.cpp
